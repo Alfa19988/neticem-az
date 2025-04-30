@@ -1,0 +1,83 @@
+<html>
+<Head>
+<title> Neticem.az </title>
+</Head>
+<body background=download.jfif text=black align=center>
+<font color=blue size=8> <b>Imtahan nəticəsi <br> </font> <hr> </b>
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>Neticə Yoxlama</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      text-align: center;
+      padding: 50px;
+    }
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      background-color: #6a5acd;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #resultImage {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Neticəni görmək üçün kodu yaz:</h1>
+    <input type="text" id="codeInput" placeholder="Kodu daxil et...">
+    <button onclick="checkCode()">Göstər</button>
+
+    <div id="resultImage" class="hidden">
+      <img src="netice.png" alt="Neticə şəkli">
+    </div>
+  </div>
+
+  <script>
+    function checkCode() {
+      const input = document.getElementById("codeInput").value;
+      const imageDiv = document.getElementById("resultImage");
+
+      if (input === "9701741") {
+        imageDiv.classList.remove("hidden");
+      } else {
+        alert("Kod düzgün deyil 😢");
+        imageDiv.classList.add("hidden");
+      }
+    }
+  </script>
+</body>
+</html>
+
+
+</body>
+</html>
+
+
+
+
+</Html>
